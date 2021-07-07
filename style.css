@@ -1,0 +1,81 @@
+body {
+    background: url(https://globe-net.com/wp-content/uploads/business-people-in-front-of-a-green-map-backgrounds-wallpapers.jpg);
+    font-family: Times New Roman, sans-serif;
+}
+header {
+    text-align: center;
+}
+#description {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+main {
+    border: solid;
+    background-color: #6B1636;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+label, legend {
+    display: inline-block;
+    margin: 0 0 5px;
+}
+.field {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.15rem;
+    margin: 0 0 20px;
+    transition: all 0.5s ease-out;
+}
+.field:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #02B80E;
+}
+fieldset {
+    border: none;
+    padding: 0 0 15px;
+}
+textarea {
+    resize: vertical;
+}
+#submit {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #3BB837;
+}
+#submit:hover {
+    background-color: #18B812;
+    cursor: pointer;
+}
+footer {
+    color: white;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+@media (max-width: 400px) {
+    #description {
+        font-size: 1rem;
+    }
+    main {
+        padding: 10px;
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+    .field {
+        font-size: 1rem;
+        margin: 0 0 8px;
+    }
+    fieldset {
+        padding: 0px;
+    }
+    #submit {
+        height: 2.5rem;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Demographic Survey Form</title>
+
+		<link href="./style.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <header>
+            <h1 id="title"><u>Demographic Survey Form</u></h1>
+            <p id="description">This survey is for collecting general data about participants</p>
+        </header>
+        
+        <main>
+            <form id="survey-form">
+            
+            <label for="name" id="name-label">Please enter your name:</label>
+            <input type="text" id="name" class="field" required placeholder="Required field"><br>
+        
+            <label for="email" id="email-label">Please enter your email:</label><br>
+            <input type="email" id="email" class="field" required placeholder="Required field"><br>
+        
+            <label for="number" id="number-label">Please enter your age:</label><br>
+            <input type="number" id="number" class="field" min="18" max="130" placeholder="Age"><br>
+        
+            <fieldset>
+                <legend>Please select your gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+        
+            <label for="dropdown">Please select your occupation:</label><br>
+            <select id="dropdown" class="field">
+                <option disabled selected>--Please choose an option--</option>
+                <option value="employed">Employed</option>
+                <option>Student</option>
+                <option>Business owner</option>
+                <option>Unemployed</option>
+                <option>Other</option>
+            </select>
+        
+            <fieldset>
+                <legend>Please select your spoken language (you can choose a few options):</legend>
+                <input type="checkbox" name="language" value="english" id="english">
+                <label for="english">English</label>
+                <br>
+                <input type="checkbox" name="language" value="spanish" id="spanish">
+                <label for="spanish">Spanish</label>
+                <br>
+                <input type="checkbox" name="language" value="chinese" id="chinese">
+                <label for="chinese">Chinese</label>
+                <br>
+                <input type="checkbox" name="language" value="russian" id="russian">
+                <label for="russian">Russian</label>
+                <br>
+                <input type="checkbox" name="language" value="french" id="french">
+                <label for="french">French</label>
+                <br>
+                <input type="checkbox" name="language" value="other" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+        
+            <label for="info">Please, provide any additional information here below:</label><br>
+            <textarea id="info" class="field" name="info" rows="5" cols="50" 
+                        placeholder="Additional info"></textarea><br>
+        
+            <button type="submit" id="submit">Submit</button>
+        
+            </form>
+        </main>
+        
+        <footer>
+            <em>&copy 2021 Created by Aleafan<em>
+        </footer>
+    </body>
+</html>
